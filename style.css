@@ -1,0 +1,75 @@
+/* CSS for animation */
+
+
+
+
+
+body {
+height: 100vh;
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-50%) translateX(-50%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+/* CSS for the card header */
+.card-header {
+  /* Dark grey */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+
+/* CSS for the card */
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0 1em 1em rgba(60, 57, 57, 0.091);
+  animation: slideIn 0.5s ease-in-out forwards;
+  -webkit-animation: slideIn 0.5s ease-in-out forwards;
+  font-size: 18px;
+  line-height: 1.8;
+  padding: 2em;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* CSS classes for different categories */
+.Stories {
+  background-color: #ffc107; /* Yellow */
+  color: #333;
+}
+
+.Interpretations {
+  background-color: #007bff; /* Blue */
+  color: #fff;
+}
+
+.IceBreaker {
+  background-color: #28a745; /* Green */
+  color: #fff;
+}
+
+.HotTopics {
+  background-color: #dc3545; /* Red */
+  color: #fff;
+}
+
+.Ethics {
+  background-color: #7535dc; /* Red */
+  color: #fff;
+}
